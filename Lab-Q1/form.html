@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegistratonForm</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th><h1>Registration Form</h1></th>
+        </tr>
+        <form>
+            <tr>
+                <td>
+                    <label>Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="txt" placeholder="Eg:John" maxlength="25" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Email:</label>
+                </td>
+                <td>  
+                    <input type="text" name="email" required placeholder="test@example.com" autofocus>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="psword">Password:</label>
+                </td>
+                <td>   
+                    <input type="password" name="psword" minlength="6" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="category">Category:</label>
+                </td>
+                <td>
+                    <select name="category" required>
+                        <option value="student">Student</option>
+                        <option value="employee">Employee</option>
+                        <option value="freelance" selected>Freelancer</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date">Event date:</label>
+                </td>
+                <td>
+                    <input type="date" name="evntdate" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="radiobtn" >1 Ticket</label>
+                    <input type="radio" name="ticket"  >
+                    <label for="radiobtn">2 Tickets</label>
+                    <input type="radio" name="ticket" checked >
+                    <label for="radiobtn">3 Tickets</label>
+                    <input type="radio" name="ticket">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="online">Online Payment:</label>
+                <input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="notes">Notes:</label></td>
+                <td>
+                    <textarea name="notes" cols="30" rows="10" placeholder="Enter the Notes Here"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <input type="submit" name="submit">
+                </th>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
